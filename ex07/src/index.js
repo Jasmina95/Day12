@@ -18,7 +18,7 @@ var collection = {
   }
 };
 
-// Keep a copy of the collection fot tests
+// Keep a copy of the collection for tests
 var oldCollection = JSON.parse(JSON.stringify(collection));
 
 function updateRecords(object, id, prop, value) {
