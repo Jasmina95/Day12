@@ -1,5 +1,4 @@
 // Only change code below this line
-
 function sumFibonacci(num) {
   if (num <= 0) {
     return 0;
