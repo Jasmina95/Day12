@@ -1,5 +1,4 @@
 // Only change code below this line
-//var counter = 2;
 
 function sumFibonacci(num) {
   if (num <= 0) {
@@ -9,39 +8,28 @@ function sumFibonacci(num) {
     return 1;
   }
 
-  var sum = 1;
+  var sum = 0;
+  var counter = num;
 
-  function fibonacci(var1, var2) {
-    if (var2 <= num) {
-      if (var2 % 2 !== 0) {
-        sum += var2;
-      }
-      return fibonacci(var2, var2 + var1);
+  function fib(counter) {
+    if (counter === 2) {
+      return [1, 1];
+    } else {
+      const countArray = fib(counter - 1);
+      countArray.push(countArray[countArray.length - 2] + countArray[countArray.length - 1]);
+      return countArray;
     }
   }
-  fibonacci(1, 1);
+
+  var fibArray = fib(counter);
+
+  for (var i = 0; fibArray[i] < counter; i++) {
+    if (fibArray[i] % 2 !== 0) {
+      sum += fibArray[i];
+    }
+  }
 
   return sum;
-  /*if (num <= 2) {
-    return [1, 1];
-  } else {
-    counter++;
-    const countArray = sumFibonacci(num - 1);
-    countArray.push(countArray[countArray.length - 2] + countArray[countArray.length - 1]);
-    
-    if (num === counter) {
-      var sum = 0;
-      for (var i = 0; countArray[i] < counter; i++) {
-        if (countArray[i] % 2 !== 0) {
-          sum += countArray[i];
-        }
-      }
-      counter = 2;
-      return sum;
-    }
-    num++;
-    return countArray;
-  }*/
 }
 // Only change code above this line
 
