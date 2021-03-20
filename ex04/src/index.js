@@ -8,7 +8,6 @@ function sumFibonacci(num) {
   }
 
   var sum = 0;
-  var counter = num;
 
   function fib(counter) {
     if (counter === 2) {
@@ -20,7 +19,7 @@ function sumFibonacci(num) {
     }
   }
 
-  var fibArray = fib(counter);
+  var fibArray = fib(num);
 
   for (var i = 0; fibArray[i] < num; i++) {
     if (fibArray[i] % 2 !== 0) {
