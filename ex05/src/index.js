@@ -15,10 +15,10 @@ var myPetsArray = [
 ];
 
 function myPetsFunction(pets) {
-  return myPetsArray[1].name;
+  return pets[1].name;
 }
 // Only change code above this line
 
-console.log(myPetsFunction()); // Change this line
+console.log(myPetsFunction(myPetsArray)); // Change this line
 module.exports = myPetsFunction;
 module.exports.myPets = myPetsArray;
