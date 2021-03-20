@@ -21,7 +21,7 @@ function sumFibonacci(num) {
 
   var fibArray = fib(num);
 
-  for (var i = 0; fibArray[i] < num; i++) {
+  for (var i = 0; fibArray[i] <= num; i++) {
     if (fibArray[i] % 2 !== 0) {
       sum += fibArray[i];
     }
