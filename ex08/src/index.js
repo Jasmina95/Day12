@@ -45,6 +45,6 @@ console.log(lookUpProfile("Jane", "lastName"));
 console.log(lookUpProfile("Richard", "likes"));
 console.log(lookUpProfile("Rob", "number"));
 console.log(lookUpProfile("Rob", "JavaScript"));
-console.log(lookUpProfile("John", "adress"));
+console.log(lookUpProfile("John", "address"));
 
 module.exports = lookUpProfile;
